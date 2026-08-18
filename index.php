@@ -1,9 +1,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>IPT10 Laboratory Activity #2</title>
+    <title>IPT10 Laboratory Activity #3B</title>
     <link rel="icon" href="https://phpsandbox.io/assets/img/brand/phpsandbox.png">
-    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.15.0.min.css" />   
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.15.0.min.css" />
 </head>
 
 <body style="background-color: pink;">
@@ -21,7 +21,8 @@
   <div class="col">
     <h4>File Upload</h4>
 
-    <form>
+    <!-- method + enctype are REQUIRED for file uploads to actually reach the server -->
+    <form method="POST" action="uploaded.php" enctype="multipart/form-data">
         <div class="p-card">
             <h3>Text File</h3>
             <p class="p-card__content">
@@ -43,4 +44,3 @@
 
 </body>
 </html>
-
